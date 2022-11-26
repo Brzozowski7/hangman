@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { getWord } from "../../redux/gameSlice/gameSlice";
-import { Wrapper } from "./StartGameBtn.styles";
+import { StyledBtn } from "./StartGameBtn.styles";
 
 export default function StartGameBtn() {
   const dispatch = useDispatch();
@@ -11,8 +11,8 @@ export default function StartGameBtn() {
   };
 
   return (
-    <Wrapper gameOn={gameOn} onClick={handleClick}>
+    <StyledBtn gameOn={gameOn} onClick={handleClick}>
       Get a word
-    </Wrapper>
+    </StyledBtn>
   );
 }

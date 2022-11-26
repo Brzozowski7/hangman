@@ -11,7 +11,7 @@ const blink = keyframes`
   }
 `;
 
-export const Wrapper = styled.button<{ gameOn: boolean }>`
+export const StyledBtn = styled.button<{ gameOn: boolean }>`
   text-transform: uppercase;
   background-color: ${pallete.Grey};
   border: 2px solid black;

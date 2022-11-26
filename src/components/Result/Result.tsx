@@ -1,9 +1,8 @@
 import useCheckResult from "./useCheckResult";
-import { Wrapper } from "./Result.styles";
-import { Results } from "./Result.const";
+import { StyledParagraph } from "./Result.styles";
 
 export default function Result() {
-  const result = useCheckResult() as Results;
+  const result = useCheckResult();
 
-  return <Wrapper result={result}>{result}</Wrapper>;
+  return <StyledParagraph result={result}>{result}</StyledParagraph>;
 }
